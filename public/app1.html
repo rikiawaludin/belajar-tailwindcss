@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Belajar Tailwindcss</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            spacing: {
+              13: "3.25rem",
+            },
+            fontFamily: {
+                inter: ['Inter'],
+            }
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <h1 class="text-8xl font-bold text-center my-10">Mari belajar tailwindcss</h1>
+
+    <section class="mb-10 bg-gradient-to-br via-red-200 from-indigo-200 to-yellow-200">
+      <h2 class="text-3xl text-center">Spacing</h2>
+      <div class="m-13">Margin</div>
+      <div class="py-8">Padding</div>
+    </section>
+
+    <section class="mb-10 bg-green-200">
+      <h2 class="text-3xl text-center">Sizing</h2>
+      <div class="w-32 h-32">Kotak 1</div>
+    </section>
+
+    <section class="mb-96 font-inter max-w-3xl mx-auto">
+      <h2 class="mb-4 text-4xl font-bold">Belajar mengenai Typography pada <span class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">tailwindCSS</span></h2>
+      <div class="mb-2 text-lg text-gray-500">By <a href="#" class="text-gray-700 font-semibold">Riki Awaludin</a>, 01 Januari 2024</div>
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet <a href="#" class="underline font-semibold text-blue-600">consectetur</a> adipisicing elit. Id aliquam
+        ratione dolor repellat, reprehenderit nisi non corporis quod velit
+        beatae eveniet pariatur mollitia deleniti, blanditiis earum aliquid. Ea
+        facilis deleniti, natus quas in dolores libero et eius sed repellendus
+        earum voluptate hic dolorum corrupti. Illo pariatur reprehenderit culpa
+        amet quaerat!
+      </p>
+      <blockquote class="mb-4 italic font-thin text-xl">
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio et est ad
+        aliquam quas id perspiciatis ea corporis commodi minima."
+      </blockquote>
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi quos aut
+        modi illum molestiae odit porro adipisci harum dolorem, repellendus
+        alias neque autem debitis, voluptatem tenetur corrupti? Commodi,
+        quisquam corporis!
+      </p>
+    </section>
+  </body>
+</html>
