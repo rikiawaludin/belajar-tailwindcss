@@ -1,0 +1,12 @@
+runtime: nodejs18
+
+handlers:
+- url: /img
+  static_dir: public/img
+
+- url: /css
+  static_dir: public/css
+
+- url: /.*
+  static_files: public/app1.html
+  upload: public/app1.html
